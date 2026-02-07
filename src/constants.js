@@ -8,13 +8,9 @@ export const services = [
         title: "Software Engineer",
         icon: 'https://csgeeek.github.io/web.png',
     },
-    {
-        title: "Photographer",
-        icon: 'https://csgeeek.github.io/web.png',
-    },
 ];
 
-export const name = 'Nithin';
+export const name = 'Suhail';
 
 export const experiences = [
     {
