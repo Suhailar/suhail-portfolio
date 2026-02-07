@@ -14,28 +14,47 @@ export const name = 'Suhail';
 
 export const experiences = [
     {
-        'company': 'Inncircles Technologies',
-        'role': 'Product Developer',
-        'duration': 'April 2023 - Present',
-        'logo': 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/e5gz1yggdy8sc1umna3e',
+        'company': 'Abundant AI Private Limited',
+        'role': 'Application Support Engineer',
+        'duration': 'Jun 2025 - Oct 2025',
+        'logo': 'https://abundantai.in/img/ai_logo.png',
         'points': [
-            'Involved in dynamic contributions to web and mobile📱 development projects, actively influencing and improving project outcomes.',
-            'Developed multiple shared components to simplify tasks for fellow developers, boosting efficiency and teamwork.',
-            'Enhanced product performance through significant contributions to backend development, optimizing essential components for improved efficiency 📈.',
-            'Implemented data security for the company’s product to provide role-based access control ⚙️.'
+            'Worked closely with development teams to analyze and debug application level issues in ERP-based POS and Inventory systems. ',
+            'Executed complex SQL queries and stored procedures to validate data, generate reports, and support application functionality.',
+            'Assisted in identifying root causes for production issues by analyzing logs and coordinating fixes with developers.',
+            'Supported application enhancements and performance improvements by validating fixes and monitoring system behavior. '
         ],
-        'url': 'https://inncircles.com/#home',
+        'url': 'https://abundantai.in/',
     },
+
     {
-        'company': 'AT & T',
-        'role': 'Technical Intern',
-        'duration': 'Jan 2023 - March 2023',
-        'logo': 'https://www.att.com/ecms/dam/att/consumer/global/logos/att_globe_500x500.jpg',
+        'company': 'Nullclass Edtech Pvt Ltd',
+        'role': 'Web Developer Internship',
+        'duration': 'Nov 2023 - Mar 2024',
+        'logo': 'https://cdn.nullclass.com/images/heroimage.png',
         'points': [
-            'Gained experience with Git version control contributing to the development and maintenance of code repositories.',
-            'Worked on the application dashboard, making it more user-friendly and improving its overall functionality📱.'
+            'Designed and developed responsive web interfaces using HTML, CSS, JavaScript, and React.js.',
+            'Built reusable React components and implemented client-side routing using React Router.',
+            'Integrated REST APIs using Axios and handled authentication using JWT.',
+            'Worked on full-stack features using Node.js, Express.js, and MongoDB for CRUD operations.',
+            'Deployed frontend applications on Netlify and backend services on Render.'
         ],
-        'url': 'https://www.att.com/',
+        'url': 'https://www.nullclass.com/',
+    },
+
+    {
+        'company': 'Lookman Electroplast Industries Ltd',
+        'role': 'Technical Support Engineer',
+        'duration': 'Jan 2022 - Feb 2023',
+        'logo': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXt30VkfQ5azHHkk6I_ROvP804wpphIqs3tg&sz',
+        'points': [
+            'Developed Python automation scripts to resolve device connectivity and tracking issues, improving operational efficiency.',
+            'Analyzed system logs and configuration issues to identify and fix software related problems.',
+            'Worked on Linux based systems, handling deployments, updates, and troubleshooting tasks.',
+            'Collaborated with cross functional teams, gaining strong exposure to real world software systems and workflows.'
+
+        ],
+        'url': 'https://securatechnologies.ai/',
     },
 ]
 

@@ -32,13 +32,12 @@ const About = () => {
         <div className='flex flex-col justify-around'>
           <div className='sm:px-16 px-2'>
             <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Suhail Ahamed, a 2022 graduate🎓 with a passion for crafting robust backend systems and captivating mobile applications.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/nithin-manda-728019214/' target='_blank'>Software developer</a> I specialize in MERN stacks🚀.
+            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Suhail Ahamed, a 2022 graduate🎓 with a passion for crafting robust frontend systems and captivating web applications. As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/suhail-ahamed-r-myprofile' target='_blank'>Software developer</a> I specialize in MERN stacks🚀.
               <br />
-              ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com/@goudnithin77" target='_blank'>Medium</a>, where I delve into the intricacies of software development and technology trends.
-              On a different note, I'm also into photography📸. It's not just a hobby; I see it as a way to capture moments🌟📷, tell stories.</p>
-
+              ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://github.com/Suhailar" target='_blank'>GitHub</a>, where I delve into the intricacies of software development and technology trends.
+              On a different note, I enjoy going to the gym 💪🏼 and staying physically active. I’m also passionate about traveling 🗺️ and mountain climbing 🏔️, as exploring new places gives me fresh perspectives and keeps me motivated.</p>
             <ButtonLink
-              url='https://drive.google.com/file/d/19Vh0nx5JF9G_sgawb_dUIFlGSHtjp_dw/view?usp=drive_link'
+              url='https://drive.google.com/file/d/1X-1_6Kcs_4cDO64LkTWuSxGK20tNX45U/view?usp=sharing'
               text='View Resume →'
               padding={`p-3`}
             />
