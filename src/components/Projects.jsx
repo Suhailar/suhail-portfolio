@@ -1,17 +1,17 @@
 
 import React from "react";
-import vpn from '../assets/vpn.png'
-import copeople from '../assets/copeople.png'
+import gvp from '../assets/gvp.png'
+import soc from '../assets/soc.png'
 import Footer from './Footer'
 
 const ProjectCard = ({ image, title, description, git, technologies }) => {
     return (
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            {title=='Snap Shot' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={vpn} alt="" />
+            {title=='Gesture Video Player' && <a href="#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={gvp} alt="" />
             </a>}
-            {title=='Co People' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={copeople} alt="" />
+            {title=='Stack Overflow Clone' && <a href="#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={soc} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="#">
@@ -60,18 +60,18 @@ const Projects = () => {
 
 export const project = [
     {
-        title:'Co People',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
-        image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
-        technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
+        title:'Gesture Video Player',
+        description:'Gesture Video Player is a dynamic frontend web application built using React and JavaScript. The project allows users to control video playback using intuitive gestures such as play, pause, forward, and rewind, providing a smooth and interactive viewing experience.',
+        image: {gvp},
+        git:'https://github.com/Suhailar/gesture-video-player.git',
+        technologies:['ReactJS', 'JavaScript' , 'CSS3']
     },
     {
-        title:'Snap Shot',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
-        image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
-        technologies:[ 'React JS', 'tailwind CSS']
+        title:'Stack Overflow Clone',
+        description:'Stack Overflow Clone is a responsive web application built using React JS and Node. This project replicates the core functionality of Stack Overflow, allowing users to ask questions, answer them, and engage with the community.',
+        image: {soc},
+        git:"https://github.com/Suhailar/Stack-overflow.git",
+        technologies:[ 'ReactJS', 'Node.js', 'MongoDB' ]
     }
 ]
 

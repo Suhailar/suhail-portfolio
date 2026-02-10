@@ -1,4 +1,3 @@
-
 export const services = [
     {
         title: "Technology Enthusiast",
