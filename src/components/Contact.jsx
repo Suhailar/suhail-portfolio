@@ -3,26 +3,18 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
-import { 
-  EMAIL_JS_SERVICE_ID, 
-  EMAIL_JS_TEMPLATE_ID, 
-  EMAIL_JS_PUBLIC_KEY 
-} from "../constants";
-
+import {   EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } from "../constants";
 import Footer from "./Footer";
 
 const Contact = () => {
   /* const formRef = useRef(); */
-
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+	name: "",
+	email: "",
+	message: "",
   });
-
   const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
+  	const handleChange = (e) => {
     /* const { target } = e; */
     const { name, value } = e.target;
 
@@ -31,7 +23,7 @@ const Contact = () => {
       [name]: value,
     }));
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -143,11 +135,26 @@ const Contact = () => {
             </label>
 
             <button
+  type="submit"
+  className="
+    w-full mt-6
+    rounded-xl
+    bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600
+    py-3.5
+    text-center text-base font-semibold text-white
+    hover:-translate-y-0.5 hover:scale-[1.01]
+    transition-all duration-300
+  "
+>
+  Send Message
+</button>
+
+            {/* <button
               type="submit"
               className="pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900"
             >
               {loading ? "Sending..." : "Send"}
-            </button>
+            </button> */}
           </form>
         </div>
 
