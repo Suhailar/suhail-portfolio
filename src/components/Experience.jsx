@@ -2,19 +2,23 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from '../constants';
-import Footer from './Footer';
+
 
 
 const Experience = () => {
   return (
-    <div className='experience bg-black w-screen text-white pt-4 pt-16 overflow-x-hidden' id='experience'>
+    <div className='experience bg-black w-screen text-white pt-16 overflow-x-hidden' id='experience'>
+    {/* <div className='experience bg-black w-full text-white py-12 overflow-x-hidden' id='experience'> */}
       <div className='pt-12 sm:px-16'>
         <p className='font-light'>MY JOURNEY SO FAR.</p>
-        <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Work Experience.</h2>
+        <h2 className='text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500'>Work Experience.</h2>
+        
       </div>
       <VerticalTimeline className='mt-9'>
         {experiences.map((experience) => (
+//>>       {experiences.map((experience, index) => (
           <VerticalTimelineElement
+//>>           key={index}
             className="relative vertical-timeline-element--work"
             contentStyle={{ background: "#1d1836", color: "#fff", }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
@@ -53,9 +57,9 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      <Footer/>
     </div>
   )
 }
 
 export default Experience;
+

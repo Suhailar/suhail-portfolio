@@ -4,7 +4,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 import {   EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } from "../constants";
-import Footer from "./Footer";
 
 const Contact = () => {
   /* const formRef = useRef(); */
@@ -78,12 +77,9 @@ const Contact = () => {
   };
 
   return (
-    <div className='relative z-0 bg-black w-screen min-h-screen flex flex-col pt-12'>
-      <div
-        className='flex-1 text-white contact overflow-x-hidden'
-        id='contact'
-      >
-        <div className="z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl">
+    <div className='bg-black w-full min-h-full py-12'>
+      <div className='text-white contact overflow-x-hidden'id='contact'>
+        <div className="z-10 w-full sm:w-[650px] mx-auto p-8 rounded-2xl">
           <p className="font-light">REACH OUT TO ME</p>
 
           <h2 className="text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500">
@@ -134,36 +130,34 @@ const Contact = () => {
               />
             </label>
 
-            <button
-  type="submit"
-  className="
-    w-full mt-6
-    rounded-xl
-    bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600
-    py-3.5
-    text-center text-base font-semibold text-white
-    hover:-translate-y-0.5 hover:scale-[1.01]
-    transition-all duration-300
-  "
->
-  Send Message
-</button>
-
             {/* <button
+              type="submit"
+              className="
+                w-full mt-6
+                rounded-xl
+                bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600
+                py-3.5
+                text-center text-base font-semibold text-white
+                hover:-translate-y-0.5 hover:scale-[1.01]
+                transition-all duration-300"
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button> */}
+
+            <button
               type="submit"
               className="pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900"
             >
               {loading ? "Sending..." : "Send"}
-            </button> */}
+            </button>
           </form>
         </div>
 
         <ToastContainer position="bottom-right" />
       </div>
-
-      <Footer />
     </div>
   );
 };
 
 export default Contact;
+

@@ -1,8 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../index.css';
 import { services } from '../constants';
 import ButtonLink from './ButtonLink';
-import Footer from './Footer';
 
 const ServiceCard = ({ service }) => (
   <div className='sm:w-[250px] w-full'>
@@ -26,7 +25,7 @@ const ServiceCard = ({ service }) => (
 
 const About = () => {
   return (
-    <div>
+    <div className='bg-black w-full min-h-full py-12'>
 
       <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about py-12 mt-8 overflow-x-hidden' id='about'>
         <div className='flex flex-col justify-around'>
@@ -40,7 +39,7 @@ const About = () => {
               ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on 
               <a className=' text-purple-300 hover:text-purple-400 duration-300' 
               href="https://github.com/Suhailar" 
-              target='_blank' rel="noreferrer">GitHub</a>, where I delve into the intricacies of software development and technology trends.
+              target='_blank' rel="noreferrer"> GitHub</a>, where I delve into the intricacies of software development and technology trends.
               On a different note, I enjoy going to the gym 💪🏼 and staying physically active. I’m also passionate about traveling 🗺️ and mountain climbing 🏔️, as exploring new places gives me fresh perspectives and keeps me motivated.</p>
             <ButtonLink
               url='https://drive.google.com/file/d/1X-1_6Kcs_4cDO64LkTWuSxGK20tNX45U/view?usp=sharing'
@@ -56,9 +55,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
 
 export default About;
+
+
+

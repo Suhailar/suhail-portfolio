@@ -50,12 +50,13 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 p-4 text-white fixed w-full z-10 top-0" style={{ cursor: 'default' }}>
+      {/* <nav className="bg-gray-900/90 p-4 text-white fixed w-full z-50 top-0 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"> */}
       <div className="mx-auto text-center flex w-5/6 justify-between">
         
         <div className="hidden sm:flex space-x-2 items-center text-sm">
   <GlassNavLink to="/">Home</GlassNavLink>
   <GlassNavLink to="/about">About</GlassNavLink>
-</div>
+  </div>
 
 
         
